@@ -1,0 +1,8 @@
+# Secrets and local runtime — never commit these.
+/config.yaml
+/auth/
+/bin/
+
+# OS noise
+Thumbs.db
+.DS_Store

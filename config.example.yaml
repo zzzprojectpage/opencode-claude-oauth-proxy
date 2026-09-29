@@ -1,0 +1,28 @@
+# Minimal loopback-only CLIProxyAPI configuration.
+#
+# 1. Copy this file to config.yaml
+# 2. Replace REPLACE_WITH_A_LONG_RANDOM_KEY with a long random value
+#    (see README "Create the configuration")
+#
+# config.yaml and the auth/ directory contain secrets. Keep them out of git.
+
+config-version: 8
+
+server:
+  host: 127.0.0.1
+  port: 8317
+  tls:
+    enable: false
+
+management:
+  allow-remote: false
+  secret-key: ""
+  disable-control-panel: true
+  disable-auto-update-panel: true
+
+access:
+  api-keys:
+    - "REPLACE_WITH_A_LONG_RANDOM_KEY"
+
+oauth:
+  auth-dir: "auth"
